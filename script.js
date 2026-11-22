@@ -107,6 +107,12 @@ if (teamCarousel) {
     content.append(profileElement("h3", "font-display text-2xl font-black", title));
     const subtitle = profile.name ? profile.role : profile.status;
     if (subtitle) content.append(profileElement("p", "mt-1 font-bold text-white/90", subtitle));
+    if (profile.formerRole) {
+      const formerRole = profileElement("p", "mt-1 break-words text-sm leading-snug text-white/90", "Former " + profile.formerRole);
+      formerRole.id = profileId + "-former-role";
+      content.append(formerRole);
+      button.setAttribute("aria-describedby", formerRole.id);
+    }
     const summary = profile.summary || profile.responsibilities || profile.bio;
     content.append(profileElement("p", "profile-card-copy mt-3 text-base text-white/90", summary));
     content.append(profileElement("span", "mt-4 inline-block border-b border-white/60 font-bold", "View profile"));
