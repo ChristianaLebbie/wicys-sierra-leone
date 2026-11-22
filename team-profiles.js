@@ -4,6 +4,7 @@
 const teamProfiles = [
   {
     id: "christiana-ama-lebbie",
+    formerRole: "Secretary",
     role: "Affiliate President / Co-Founder",
     name: "Christiana Ama Lebbie",
     summary: "Sets the affiliate direction and coordinates chapter activities.",
@@ -36,6 +37,7 @@ const teamProfiles = [
   },
   {
     id: "isatu-magdalene-kamara",
+    formerRole: "Public Relations Officer",
     role: "Affiliate Treasurer / Co-Founder",
     name: "Isatu Magdalene Kamara",
     bio: "Isatu co-founded WiCyS Sierra Leone, previously served as Public Relations Officer (PRO), and now serves as Affiliate Treasurer. She attended the University of Makeni and lists experience with Ubuntu Technology Afrika (Vitaly).",
@@ -58,6 +60,7 @@ const teamProfiles = [
   },
   {
     id: "eddie-joe-vamboi",
+    formerRole: "Treasurer",
     role: "Membership and Affiliate Operations Lead / Co-Founder",
     leadershipMember: true,
     name: "Eddie Joe Vamboi",
