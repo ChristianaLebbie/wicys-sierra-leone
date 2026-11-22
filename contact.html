@@ -40,6 +40,7 @@
       };
     </script>
     <style>
+      #involvement-form[hidden] { display: none; }
       html {
         scroll-behavior: smooth;
         scroll-padding-top: 6rem;
@@ -300,7 +301,7 @@
             </a>
             <a
               class="action-card flex h-full flex-col rounded-3xl border border-ink/10 bg-[#763D53] text-white p-7 shadow-sm"
-             href="mailto:WiCySSierraLeone@wicys.org?subject=Partnership%20or%20Sponsorship%20Enquiry">
+             href="contact.html?interest=sponsorship#get-involved">
               <p
                 class="mb-4 text-xs font-extrabold uppercase tracking-[.16em] text-white/90"
               >
@@ -312,7 +313,7 @@
               <p class="mt-4 flex-1 leading-7 text-white/90">
                 For companies, NGOs, institutions and potential supporters.
               </p>
-              <span class="mt-5 w-fit border-b border-white/60 font-bold">Email partnerships</span>
+              <span class="mt-5 w-fit border-b border-white/60 font-bold">Start an inquiry</span>
             </a>
             <a
               class="action-card flex h-full flex-col rounded-3xl border border-ink/10 bg-[#405638] text-white p-7 shadow-sm"
@@ -361,18 +362,19 @@
           <p class="mt-3 text-sm leading-6 text-slateink">Share only the information needed for your inquiry. Read <a class="font-bold text-violet underline" href="privacy.html">Privacy &amp; activity photos</a> for how email drafts and photo questions are handled.</p>
           <form id="involvement-form" class="mt-6 grid gap-5" hidden>
             <label class="grid gap-2 font-bold">I’d like to
-              <select name="interest" required class="rounded-xl border border-ink/30 bg-white p-3">
+              <select name="interest" aria-describedby="involvement-hint" required class="rounded-xl border border-ink/30 bg-white p-3">
                 <option value="">Choose an option</option>
                 <option value="school">Request a school visit</option>
                 <option value="campus">Propose a campus partnership</option>
                 <option value="volunteer">Volunteer</option>
+              <option value="sponsorship">Discuss a partnership or sponsorship</option>
               </select>
             </label>
             <div class="grid gap-4 sm:grid-cols-2">
               <label class="grid gap-2 font-bold">Your name <input name="name" autocomplete="name" required maxlength="100" class="rounded-xl border border-ink/30 p-3"></label>
               <label class="grid gap-2 font-bold">Your email <input name="email" type="email" autocomplete="email" required maxlength="150" class="rounded-xl border border-ink/30 p-3"></label>
             </div>
-            <p class="text-sm text-slateink" data-involvement-hint hidden></p>
+            <p class="text-sm text-slateink" id="involvement-hint" data-involvement-hint hidden></p>
             <fieldset data-interest="school" hidden disabled class="space-y-4">
               <legend class="sr-only">School visit details</legend>
               <label class="grid gap-2 font-bold">School name <input name="school" required maxlength="150" class="rounded-xl border border-ink/30 p-3"></label>
@@ -385,6 +387,10 @@
             <fieldset data-interest="volunteer" hidden disabled>
               <legend class="sr-only">Volunteering details</legend>
               <label class="grid gap-2 font-bold">Area of interest <input name="volunteerArea" required maxlength="150" class="rounded-xl border border-ink/30 p-3"></label>
+            </fieldset>
+            <fieldset data-interest="sponsorship" hidden disabled>
+              <legend class="sr-only">Partnership or sponsorship details</legend>
+              <label class="grid gap-2 font-bold">Organization <input name="organization" autocomplete="organization" required maxlength="150" class="rounded-xl border border-ink/30 p-3"></label>
             </fieldset>
             <label class="grid gap-2 font-bold">Anything else? <textarea name="details" rows="4" maxlength="600" class="rounded-xl border border-ink/30 p-3"></textarea></label>
             <button type="submit" class="feature-button feature-primary w-fit">Open email draft</button>
