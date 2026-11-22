@@ -243,10 +243,11 @@ if (involvementForm) {
     ["school", "School visit request"],
     ["campus", "Campus partnership proposal"],
     ["volunteer", "Volunteer interest"],
+    ["sponsorship", "Partnership or sponsorship inquiry"],
   ]);
   const labels = {
     name: "Name", email: "Email", school: "School", yearGroups: "Year groups",
-    institution: "University or college", volunteerArea: "Area of interest", details: "Additional details",
+    institution: "University or college", volunteerArea: "Area of interest", organization: "Organization", details: "Additional details",
   };
   const requested = new URLSearchParams(location.search).get("interest");
   if (subjects.has(requested)) interest.value = requested;
