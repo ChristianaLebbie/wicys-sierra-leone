@@ -49,6 +49,7 @@ const teamProfiles = [
     role: "Partnership and Sponsorship",
     leadershipMember: true,
     name: "Dorian Oliver Collier",
+    photo: "assets/dorian-oliver-collier.jpg",
     bio: "Dorian works in cybersecurity and incident response and is a certified SIM3 auditor.",
     summary: "Supports partnerships and sponsorship for WiCyS Sierra Leone.",
     responsibilities: "Supports collaboration with partner organizations and sponsorship efforts for WiCyS Sierra Leone.",
