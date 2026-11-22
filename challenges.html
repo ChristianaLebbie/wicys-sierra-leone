@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#1c1635" />
+    <meta
+      name="description"
+      content="WiCyS Sierra Leone welcomes learners in primary and secondary schools, universities, women professionals and communities into cybersecurity."
+    />
+    <title>Cyber Challenges | WiCyS Sierra Leone</title>
+    <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#1c1635",
+              plum: "#30214f",
+              violet: "#563494",
+              lime: "#dcf799",
+              mint: "#e5f4ec",
+              cream: "#f8f7fc",
+              slateink: "#4c485e",
+            },
+            fontFamily: {
+              sans: ["DM Sans", "sans-serif"],
+              display: ["Outfit", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 6rem;
+      }
+      body {
+        font-family: "DM Sans", sans-serif;
+      }
+      :focus-visible {
+        outline: 3px solid #563494;
+        outline-offset: 4px;
+      }
+      .dark-focus:focus-visible {
+        outline-color: #dcf799;
+      }
+      .flag-line {
+        background: linear-gradient(
+          to right,
+          #169c63 0 33.33%,
+          #fff 33.33% 66.66%,
+          #2672b9 66.66%
+        );
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="interactions.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="overflow-x-hidden bg-cream text-ink antialiased">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-lime focus:px-5 focus:py-3 focus:font-extrabold"
+      >Skip to main content</a
+    >
+    <div class="flag-line h-1.5" aria-hidden="true"></div>
+    <div class="bg-ink px-4 py-2 text-center text-xs font-bold text-white/85">
+      Rooted in Sierra Leone · Connected globally
+    </div>
+    <header
+      class="sticky top-0 z-50 border-b border-ink/10 bg-cream/95 backdrop-blur-lg"
+    >
+      <div
+        class="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-3 sm:px-8 lg:px-12"
+      >
+        <a
+          href="index.html"
+          class="flex items-center gap-3"
+          aria-label="WiCyS Sierra Leone home"
+          ><img
+            src="assets/logo.jpg"
+            alt=""
+            width="50"
+            height="50"
+            class="h-12 w-12 rounded-xl bg-white p-1 object-contain"
+          /><span class="leading-tight"
+            ><strong class="block font-display text-2xl font-black"
+              >WiCyS<span class="text-violet">.</span></strong
+            ><span
+              class="block text-[10px] font-extrabold uppercase tracking-[.2em] text-slateink"
+              >Sierra Leone</span
+            ></span
+          ></a
+        >
+        <nav
+          aria-label="Primary navigation"
+          class="hidden flex-wrap items-center justify-end gap-1 xl:flex"
+        >
+          <a
+            class="rounded-lg px-2 py-2 text-sm font-bold transition hover:bg-mint hover:text-violet"
+            href="index.html"
+            >Home</a
+          ><a
+            class="rounded-lg px-2 py-2 text-sm font-bold transition hover:bg-mint hover:text-violet"
+            href="about.html"
+            >About</a
+          ><a
+            class="rounded-lg px-2 py-2 text-sm font-bold transition hover:bg-mint hover:text-violet"
+            href="audiences.html"
+            >Who We Serve</a
+          ><a
+            class="rounded-lg px-2 py-2 text-sm font-bold transition hover:bg-mint hover:text-violet"
+            href="programs.html"
+            >Programs</a
+          ><a
+            href="challenges.html"
+            aria-current="page"
+            class="rounded-lg bg-mint px-3 py-2 text-sm font-extrabold text-violet"
+            >Cyber Challenges</a
+          ><a
+            class="rounded-lg px-2 py-2 text-sm font-bold transition hover:bg-mint hover:text-violet"
+            href="opportunities.html"
+            >Opportunities</a
+          ><a
+            class="rounded-lg px-2 py-2 text-sm font-bold transition hover:bg-mint hover:text-violet"
+            href="community.html"
+            >Community</a
+          ><a
+            class="rounded-lg px-2 py-2 text-sm font-bold transition hover:bg-mint hover:text-violet"
+            href="partners.html"
+            >Partnerships</a
+          ><a
+            class="rounded-lg px-2 py-2 text-sm font-bold transition hover:bg-mint hover:text-violet"
+            href="team.html"
+            >Our Team</a
+          ><a
+            class="rounded-lg px-2 py-2 text-sm font-bold transition hover:bg-mint hover:text-violet"
+            href="contact.html"
+            >Contact</a
+          >
+        </nav>
+        <button
+          id="menu-toggle"
+          type="button"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+          class="flex h-12 w-12 items-center justify-center rounded-xl border border-ink/20 xl:hidden"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            class="h-6 w-6"
+            aria-hidden="true"
+          >
+            <path id="menu-icon" d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+      <nav
+        id="mobile-menu"
+        aria-label="Mobile navigation"
+        hidden
+        class="max-h-[76vh] overflow-y-auto border-t border-ink/10 bg-cream px-5 py-3 xl:hidden"
+      >
+        <a
+          href="index.html"
+          class="block rounded-lg p-3 font-bold hover:bg-mint focus-visible:bg-mint"
+          >Home</a
+        ><a
+          href="about.html"
+          class="block rounded-lg p-3 font-bold hover:bg-mint focus-visible:bg-mint"
+          >About</a
+        ><a
+          href="audiences.html"
+          class="block rounded-lg p-3 font-bold hover:bg-mint focus-visible:bg-mint"
+          >Who We Serve</a
+        ><a
+          href="programs.html"
+          class="block rounded-lg p-3 font-bold hover:bg-mint focus-visible:bg-mint"
+          >Programs</a
+        ><a
+          href="challenges.html"
+          aria-current="page"
+          class="block rounded-lg p-3 font-bold hover:bg-mint focus-visible:bg-mint"
+          >Cyber Challenges</a
+        ><a
+          href="opportunities.html"
+          class="block rounded-lg p-3 font-bold hover:bg-mint focus-visible:bg-mint"
+          >Opportunities</a
+        ><a
+          href="community.html"
+          class="block rounded-lg p-3 font-bold hover:bg-mint focus-visible:bg-mint"
+          >Community</a
+        ><a
+          href="partners.html"
+          class="block rounded-lg p-3 font-bold hover:bg-mint focus-visible:bg-mint"
+          >Partnerships</a
+        ><a
+          href="team.html"
+          class="block rounded-lg p-3 font-bold hover:bg-mint focus-visible:bg-mint"
+          >Our Team</a
+        ><a
+          href="contact.html"
+          class="block rounded-lg p-3 font-bold hover:bg-mint focus-visible:bg-mint"
+          >Contact</a
+        >
+      </nav>
+    </header>
+    <main id="main">
+      <section class="site-page-intro bg-gradient-to-br from-[#ede9f8] via-cream to-mint px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
+        <div class="mx-auto max-w-7xl">
+          <div class="mb-12 max-w-4xl">
+            <p
+              class="mb-5 text-xs font-extrabold uppercase tracking-[.2em] text-violet"
+            >
+              Competitions
+            </p>
+            <h1
+              class="font-display text-[clamp(2rem,6vw,4rem)] font-black leading-[1.08] tracking-tight"
+            >
+              A challenge for every stage of learning.
+            </h1>
+            <p class="mt-6 max-w-3xl text-lg leading-8 text-slateink">
+              Separate age-appropriate school activities from advanced technical
+              competitions. Both are proposed initiatives; registration will
+              open after rules, safeguarding, partners and schedules are
+              confirmed.
+            </p>
+          </div>
+          <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            <a
+              class="action-card flex h-full flex-col rounded-3xl border border-ink/10 bg-[#15534F] text-white p-7 shadow-sm"
+             href="mailto:WiCySSierraLeone@wicys.org?subject=Schools%20Cyber%20Quiz%20Interest">
+              <p
+                class="mb-4 text-xs font-extrabold uppercase tracking-[.16em] text-white/90"
+              >
+                Proposed
+              </p>
+              <h3 class="font-display text-2xl font-black">
+                Schools Cyber Quiz
+              </h3>
+              <p class="mt-4 flex-1 leading-7 text-white/90">
+                Teacher-led quizzes, safe digital safety exercises and
+                age-appropriate innovation activities for primary and secondary
+                schools.
+              </p>
+              <span class="mt-5 w-fit border-b border-white/60 font-bold">Express school interest</span>
+            </a>
+            <a
+              class="action-card flex h-full flex-col rounded-3xl border border-ink/10 bg-[#49366B] text-white p-7 shadow-sm"
+             href="mailto:WiCySSierraLeone@wicys.org?subject=National%20Cyber%20Challenge%20Interest">
+              <p
+                class="mb-4 text-xs font-extrabold uppercase tracking-[.16em] text-white/90"
+              >
+                Proposed
+              </p>
+              <h3 class="font-display text-2xl font-black">
+                National Cyber Challenge
+              </h3>
+              <p class="mt-4 flex-1 leading-7 text-white/90">
+                Authorized capture-the-flag exercises, secure coding and
+                defensive security challenges for eligible university teams and
+                technical participants.
+              </p>
+              <span class="mt-5 w-fit border-b border-white/60 font-bold">Express team interest</span>
+            </a>
+            <a
+              class="action-card flex h-full flex-col rounded-3xl border border-ink/10 bg-[#244D70] text-white p-7 shadow-sm"
+             href="mailto:WiCySSierraLeone@wicys.org?subject=Cyber%20Challenge%20Volunteer%20Enquiry">
+              <p
+                class="mb-4 text-xs font-extrabold uppercase tracking-[.16em] text-white/90"
+              >
+                Get involved
+              </p>
+              <h3 class="font-display text-2xl font-black">
+                Volunteer as a judge or coach
+              </h3>
+              <p class="mt-4 flex-1 leading-7 text-white/90">
+                Support safe challenge design, scoring, coaching or outreach
+                planning.
+              </p>
+              <span class="mt-5 w-fit border-b border-white/60 font-bold">Volunteer</span>
+            </a>
+          </div>
+          <div class="mt-10 rounded-2xl bg-mint p-6">
+            <strong>Important:</strong> These are planned competitions. We are
+            not accepting paid entries or claiming announced dates, awards or
+            participating institutions.
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gradient-to-br from-ink to-plum px-5 py-12 text-white sm:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div
+          class="flex flex-wrap items-center justify-between gap-4 border-b border-white/20 pb-7"
+        >
+          <a href="index.html" class="font-display text-2xl font-black"
+            >WiCyS<span class="text-lime">.</span> Sierra Leone</a
+          ><a href="contact.html" class="font-semibold text-lime"
+            >Contact us ↗</a
+          >
+        </div>
+
+        <div class="mt-7 grid gap-6 border-b border-white/20 pb-7 sm:grid-cols-2">
+          <div>
+            <h2 class="mb-3 font-display text-xl font-bold">Connect with WiCyS Sierra Leone</h2>
+            <a class="site-email mb-3 inline-block font-bold text-lime" href="mailto:WiCySSierraLeone@wicys.org">WiCySSierraLeone@wicys.org</a>
+            <div class="flex flex-wrap gap-2">
+              <a class="social-link" href="https://chat.whatsapp.com/FDjltRYhfLxJmFACj9gEWf">WhatsApp community</a>
+              <a class="social-link" href="contact.html">Contact us</a>
+            </div>
+          </div>
+          <div>
+            <h2 class="mb-3 font-display text-xl font-bold">Follow WiCyS Sierra Leone</h2>
+            <ul class="flex flex-wrap gap-2 text-sm text-white/80" aria-label="Chapter social platforms">
+              <li><a class="social-link" href="https://www.linkedin.com/company/wicys-sierraleone/">LinkedIn</a></li>
+              <li><a class="social-link" href="https://www.instagram.com/wicys.sl/">Instagram</a></li>
+              <li><a class="social-link" href="https://www.facebook.com/profile.php?id=61578582924994">Facebook</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="mt-7 flex flex-wrap justify-between gap-6 text-sm text-white/70"
+        >
+          <p>
+            © <span id="year">2026</span> WiCyS Sierra Leone Affiliate.
+            Affiliated with Women in CyberSecurity.
+          </p>
+          <div class="flex flex-wrap gap-5">
+            <a class="underline hover:text-lime" href="https://www.wicys.org/"
+              >WiCyS Global</a
+            ><a
+              class="underline hover:text-lime"
+              href="https://www.wicys.org/code-of-conduct/"
+              >Code of conduct</a
+            ><a class="underline hover:text-lime" href="https://www.wicys.org/affiliate-portal/faq/">Affiliate guidelines</a><a class="underline hover:text-lime" href="updates.html">Programs &amp; updates</a><a class="underline hover:text-lime" href="privacy.html">Privacy &amp; photos</a><a class="underline hover:text-lime" href="index.html">Home</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
