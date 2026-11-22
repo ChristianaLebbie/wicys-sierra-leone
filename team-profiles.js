@@ -5,7 +5,7 @@ const teamProfiles = [
   {
     id: "christiana-ama-lebbie",
     formerRole: "Secretary",
-    role: "President / Co-Founder",
+    role: "President and Co-Founder",
     name: "Christiana Ama Lebbie",
     summary: "Sets the affiliate direction and coordinates chapter activities.",
     photo: "assets/christiana-lebbie.jpg",
@@ -38,7 +38,7 @@ const teamProfiles = [
   {
     id: "isatu-magdalene-kamara",
     formerRole: "Public Relations Officer",
-    role: "Treasurer / Co-Founder",
+    role: "Treasurer and Co-Founder",
     name: "Isatu Magdalene Kamara",
     bio: "Isatu co-founded WiCyS Sierra Leone, previously served as Public Relations Officer (PRO), and now serves as Treasurer. She attended the University of Makeni and lists experience with Ubuntu Technology Afrika (Vitaly).",
     summary: "Supports budgeting and financial reporting for the affiliate.",
@@ -61,7 +61,7 @@ const teamProfiles = [
   {
     id: "eddie-joe-vamboi",
     formerRole: "Treasurer",
-    role: "Membership and Operations Lead / Co-Founder",
+    role: "Membership and Operations Lead and Co-Founder",
     leadershipMember: true,
     name: "Eddie Joe Vamboi",
     summary: "Supports member engagement and affiliate operations.",
@@ -104,7 +104,7 @@ const teamProfiles = [
   },
   {
     id: "zainab-jalloh",
-    role: "Founder & Former President",
+    role: "Founder and Former President",
     status: "Non-executive advisory role",
     name: "Zainab Jalloh",
     summary: "Co-founder who advises the affiliate leadership team.",
