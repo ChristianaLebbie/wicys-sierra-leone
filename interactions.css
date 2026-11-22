@@ -152,14 +152,16 @@ main .action-card:hover { box-shadow: 0 15px 28px #21163630; }
 .profile-monogram { display: grid; width: 100%; min-height: 13rem; place-items: center; background: #ffffff16; color: white; font: 800 3rem Outfit, sans-serif; }
 .profile-card-button { background-color: inherit; }
 .profile-card-button .profile-photo, .profile-card-button .profile-monogram { width: 100%; min-height: 0; height: clamp(10.5rem, 22vw, 13rem); }
-.profile-card-button .profile-card-text { padding: 1rem 1.15rem 1.2rem; }
+.profile-card-button .profile-card-text { padding: .7rem .95rem .85rem; }
+.profile-card-button .profile-card-text h3 { font-size: 1.2rem; line-height: 1.2; }
+.profile-card-button .profile-card-text p { font-size: .875rem; line-height: 1.45; }
 .profile-card-button :is(.profile-photo, .profile-monogram) + .profile-card-text {
   position: relative;
-  margin-top: -.25rem;
+  margin-top: 0;
   border-radius: .85rem .85rem 0 0;
   background-color: inherit;
 }
-.profile-card-button .profile-photo { height: clamp(13rem, 35vw, 16rem); object-fit: cover; object-position: center 22%; }
+.profile-card-button .profile-photo { height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; }
 .profile-dialog .profile-photo { width: min(100%, 34vh); height: auto; margin-inline: auto; }
 footer .site-email { overflow-wrap: anywhere; }
 
@@ -225,7 +227,7 @@ main .action-card:hover, main .action-card:focus-visible { box-shadow: 0 14px 30
 }
 
 
-.directory-officer .profile-card-text h3 { font-size: 1.3rem; line-height: 1.25; }
+
 .directory-officer .profile-card-button { justify-content: flex-start; }
 .directory-advisor .profile-card-text { padding: 1.15rem; }
 .profile-dialog { max-height: min(85vh, 85dvh); overscroll-behavior: contain; }
