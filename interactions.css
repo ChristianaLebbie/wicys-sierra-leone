@@ -155,11 +155,11 @@ main .action-card:hover { box-shadow: 0 15px 28px #21163630; }
 .profile-card-button .profile-card-text { padding: 1rem 1.15rem 1.2rem; }
 .profile-card-button :is(.profile-photo, .profile-monogram) + .profile-card-text {
   position: relative;
-  margin-top: -.7rem;
+  margin-top: -.25rem;
   border-radius: .85rem .85rem 0 0;
   background-color: inherit;
 }
-.profile-card-button .profile-photo { object-fit: cover; object-position: center 18%; }
+.profile-card-button .profile-photo { height: clamp(13rem, 35vw, 16rem); object-fit: cover; object-position: center 22%; }
 .profile-dialog .profile-photo { width: min(100%, 34vh); height: auto; margin-inline: auto; }
 footer .site-email { overflow-wrap: anywhere; }
 
